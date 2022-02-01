@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>你回不去了</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./font/iconfont.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="code">
+        <input id="code" type="text">
+      </div>
+      <div class="bg"></div>
+      <h2 class="my-h my-h2" style="display: block"></h2>
+      <div class="goal" style="display: none">
+        <h2>WHAT IS YOUR GOAL？</h2>
+        <div class="time">
+          <h3 id="goal-time">PLEASE THINK</h3>
+        </div>
+        <div class="goal-result">
+          <ul id="goal-result"></ul>
+        </div>
+      </div>
+      <div class="write" style="display: none">
+        <h2 id="my-title">WHAT ARE YOU THINGK？</h2>
+        <div>
+          <input type="text" id="my-textarea" />
+        </div>
+        <div style="text-align: center">
+          <button id="my-submit">>></button>
+        </div>
+      </div>
+      <div class="result" style="display: none">
+        <h2 class="my-result-title">你想 <span id="my-result-title"></span></h2>
+        <div class="result-content">
+          <div class="float-div left">
+            <ul class="negactive-ul"></ul>
+          </div>
+          <div class="img-div">
+            <img src="./image/vs.png" alt="" />
+          </div>
+          <div class="float-div right">
+            <ul class="positive-ul"></ul>
+          </div>
+        </div>
+        <div style="text-align: center">
+          <button id="my-submit-1"><<</button>
+          <button id="my-submit-2">>></button>
+        </div>
+      </div>
+
+      <div class="btn">
+        <button><span class="icon iconfont" id="change">&#xe67f;</span></button>
+        <button><span class="icon iconfont" id="music">&#xe617;</span></button>
+      </div>
+      <div style="display: none">
+        <audio controls id="music-control">
+          <source src="./1.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+
+      <div class="favorite" style="display: none">
+        <button id="favorite-btn">琅琊榜</button>
+        <div class="favorite-img" style="display: none"></div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

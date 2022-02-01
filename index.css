@@ -1,0 +1,219 @@
+html,
+body,
+.bg {
+  width: 100%;
+  height: 100%;
+}
+
+.container .my-h {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: normal;
+  letter-spacing: 4px;
+  user-select: none;
+}
+
+* {
+  font-family: "Source Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+  height: 100vh;
+}
+.bg {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  position: absolute;
+  opacity: 0.2;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  position: fixed;
+  left: 15px;
+  bottom: 15px;
+}
+.btn button {
+  background: none;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.btn button:hover {
+  color: orange;
+}
+.write h2 {
+  text-align: center;
+  color: #fff;
+}
+.write #my-textarea {
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.612);
+  border-radius: 10px;
+  width: 330px;
+  padding: 10px;
+  margin-top: 25px;
+  text-align: center;
+}
+.result{
+  width: 80%;
+}
+.write button,
+.result button {
+  margin-top: 25px;
+  padding: 15px;
+  background: none;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.result h2 {
+  text-align: center;
+  color: #fff;
+}
+.result ul {
+  background: rgba(235, 235, 235, 0.265);
+  padding: 10px 8px 10px 24px;
+  border-radius: 15px;
+  list-style: decimal;
+}
+.float-div {
+  float: left;
+ 
+}
+.result .left {
+  color: rgb(109, 109, 255);
+  width: 45%;
+
+  font-weight: bold;
+}
+.result .right {
+  color: rgb(255, 102, 0);
+  width: 45%;
+  font-weight: bold;
+
+}
+.result-content::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.result-content {
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  margin-top: 25px;
+  background: rgba(255, 255, 255, 0.537);
+  border-radius: 15px;
+  padding: 20px;
+}
+.img-div {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  width: 10%;
+  float: left;
+  text-align: center;
+}
+.img-div img {
+  width: 70%;
+  margin-left: 5px;
+
+}
+.my-result-title {
+  font-weight: normal;
+}
+#my-result-title {
+  color: rgb(255, 174, 0);
+  font-weight: bold;
+}
+#my-submit:hover {
+  color: orange;
+}
+#my-submit-1:hover {
+  color: orange;
+}
+#my-submit-2:hover {
+  color: orange;
+}
+.time h3{
+  margin-top: 45px;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  
+}
+.goal-result{
+  margin-top: 15px;
+}
+#goal-result{
+  color: #fff;
+  font-size: 24px;
+  line-height:39px;
+}
+.favorite{
+  text-align: center;
+}
+.favorite,.favorite .favorite-img{
+  width: 100%;
+  height: 100%;
+}
+.favorite button{
+  background: #ffffff70;
+    padding: 10px 25px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+  
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.code{
+  position: absolute;
+  z-index: 9999;
+  background: rgb(255, 201, 100);
+  width: 100%;
+  height: 100%;
+}
+.code input{
+  background: none;
+ 
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  position: absolute;
+  padding: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
